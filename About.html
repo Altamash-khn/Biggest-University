@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="img/logo.png" alt="logo " /></a>
+        <div class="nav-links" id="navLinks">
+          <ion-icon
+            class="close-icon"
+            name="close-outline"
+            onclick="hideMenu()"
+          ></ion-icon>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <ion-icon
+          class="menu-icon"
+          name="menu-outline"
+          onclick="showMenu()"
+        ></ion-icon>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>We are the world's largest university</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem accusantium amet reiciendis vitae voluptates ratione
+            optio voluptate neque laborum delectus, eos doloremque laboriosam
+            quidem praesentium pariatur, fuga cumque asperiores necessitatibus.
+            Voluptates quisquam provident enim fugit ea? Numquam facilis totam
+            doloribus officia quia! Quo, non sunt quaerat tempora ex odio itaque
+            sed laborum enim, beatae, cumque porro. Fugiat doloremque architecto
+            ea.
+          </p>
+          <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+          <img src="img/about.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae aliquid
+        libero enim facere suscipit consectetur <br />
+        delectus sint accusantium. Sapiente ipsum at sit tenetur iste quasi.
+      </p>
+      <div class="icons">
+        <ion-icon name="logo-facebook" class="footer-icon"></ion-icon>
+        <ion-icon name="logo-twitter" class="footer-icon"></ion-icon>
+        <ion-icon name="logo-instagram" class="footer-icon"></ion-icon>
+        <ion-icon name="logo-linkedin" class="footer-icon"></ion-icon>
+      </div>
+      <p>
+        Made with
+        <ion-icon name="heart-outline" class="footer-icon a"></ion-icon> By Ayan
+      </p>
+    </footer>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-500px";
+      }
+    </script>
+  </body>
+</html>
