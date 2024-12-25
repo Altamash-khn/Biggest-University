@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore the world’s largest university offering a wide range of courses, global campuses, and top-tier facilities. Learn more about our programs and services."
+    />
+
     <title>Unversity Design</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,19 +24,22 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
-    />
   </head>
   <body>
     <section class="header">
-      <nav>
-        <a href="index.html"><img src="img/logo.png" alt="logo " /></a>
+      <nav aria-label="Main Navigation">
+        <a href="index.html"
+          ><img
+            src="img/logo.png"
+            alt="eduford logo "
+            aria-label="eduford logo"
+        /></a>
         <div class="nav-links" id="navLinks">
           <ion-icon
             class="close-icon"
             name="close-outline"
+            aria-label="Close menu"
+            role="button"
             onclick="hideMenu()"
           ></ion-icon>
           <ul>
@@ -61,35 +69,37 @@
     </section>
 
     <!-- Courses Section -->
-    <section class="Courses">
+    <section class="Courses" aria-labelledby="courses-heading">
       <h1>Courses We Offer</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-      <div class="row">
-        <div class="course-col">
+      <div class="row" aria-label="Courses offered by the institution">
+        <article class="course-col" aria-labelledby="Intermediate-course">
           <h3>Intermediate</h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
             voluptatibus sequi qui asperiores commodi expedita sit nam at, quas
             ullam! Lorem ipsum dolor sit amet.
           </p>
-        </div>
-        <div class="course-col">
+        </article>
+
+        <article class="course-col" aria-labelledby="degree-course">
           <h3>Degree</h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
             voluptatibus sequi qui asperiores commodi expedita sit nam at, quas
             ullam! Lorem ipsum dolor sit amet.
           </p>
-        </div>
-        <div class="course-col">
+        </article>
+
+        <article class="course-col" aria-labelledby="postgrad-course">
           <h3>Post Graduation</h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
             voluptatibus sequi qui asperiores commodi expedita sit nam at, quas
             ullam! Lorem ipsum dolor sit amet.
           </p>
-        </div>
+        </article>
       </div>
     </section>
 
@@ -98,25 +108,49 @@
       <h1>Our Global Campus</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-      <div class="row">
-        <div class="campus-col">
-          <img src="img/london.png" alt="london city image" />
+      <div
+        class="row"
+        role="region"
+        aria-label="Campus locations around the world"
+      >
+        <article class="campus-col" aria-labelledby="london-campus">
+          <picture>
+            <source srcset="img/london.webp" type="image/webp" />
+            <img
+              src="img/london.jpg"
+              alt="Skyline of London with modern architecture"
+            />
+          </picture>
           <div class="layer">
             <h3>LONDON</h3>
           </div>
-        </div>
-        <div class="campus-col">
-          <img src="img/newyork.png" alt="new york city image" />
+        </article>
+
+        <article class="campus-col">
+          <picture>
+            <source srcset="img/newyork.webp" type="image.webp" />
+            <img
+              src="img/newyork.jpg"
+              alt="Skyscrapers of New York City at sunset"
+            />
+          </picture>
           <div class="layer">
             <h3>NEW YORK</h3>
           </div>
-        </div>
-        <div class="campus-col">
-          <img src="img/washington.png" alt="washington city image" />
+        </article>
+
+        <article class="campus-col">
+          <picture>
+            <source srcset="img/washington.webp" type="image/webp" />
+            <img
+              src="img/washington.png"
+              alt="Modern white building in Washington with geometric design"
+            />
+          </picture>
           <div class="layer">
             <h3>WASHINGTON</h3>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
@@ -125,42 +159,72 @@
       <h1>Our Facilities</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-      <div class="row">
-        <div class="facilities-col">
-          <img src="img/library.png" alt="library" />
+      <div
+        class="row"
+        role="region"
+        aria-label="Facilities offered at our campus"
+      >
+        <article class="facilities-col" aria-labelledby="library-facility">
+          <picture>
+            <source srcset="img/library.webp" type="image/webp" />
+            <img
+              src="img/library.jpg"
+              alt="Interior of a world-class library with rows of bookshelves and reading tables"
+            />
+          </picture>
           <h3>World Class Library</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum
             dolor sit amet consectetur adipisicing.
           </p>
-        </div>
-        <div class="facilities-col">
-          <img src="img/basketball.png" alt="Basketball" />
+        </article>
+
+        <article class="facilities-col" aria-labelledby="playground-facility">
+          <picture>
+            <source srcset="img/basketball.webp" type="image.webp" />
+            <img
+              src="img/basketball.jpg"
+              alt="A women's basketball match in progress on a large outdoor basketball court"
+            />
+          </picture>
           <h3>Largest Play Ground</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum
             dolor sit amet consectetur adipisicing.
           </p>
-        </div>
-        <div class="facilities-col">
-          <img src="img/cafeteria.png" alt="" />
+        </article>
+
+        <article class="facilities-col" aria-labelledby="cafeteria-facility">
+          <picture>
+            <source srcset="img/cafeteria.webp" type="image/webp" />
+            <img
+              src="img/cafeteria.jpg"
+              alt="A modern cafeteria offering a variety of food options in a spacious dining area"
+            />
+          </picture>
           <h3>Tasty And Healthy Food</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum
             dolor sit amet consectetur adipisicing.
           </p>
-        </div>
+        </article>
       </div>
     </section>
 
     <!-- Testimonial Section -->
-    <section class="testimonials">
+    <section class="testimonials" aria-labelledby="testimonials">
       <h1>What Our Students Says</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-      <div class="row">
-        <div class="testimonial-col">
-          <img src="img/user1.jpg" alt="Christine Barkley images" />
+      <div class="row" role="region" aria-label="Student testimonials">
+        <article
+          class="testimonial-col"
+          aria-labelledby="testimonial-christine"
+        >
+          <img
+            src="img/user1.jpg"
+            alt="Photo of Christine Barkley, a student"
+          />
           <div>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -168,15 +232,34 @@
               voluptates sed ullam maxime.
             </p>
             <h3>Christine Barkley</h3>
-            <img src="img/star-solid.svg" class="akram ayan" />
-            <img src="img/star-solid.svg" class="akram ayan" />
-            <img src="img/star-solid.svg" class="akram ayan" />
-            <img src="img/star-solid.svg" class="akram ayan" />
-            <ion-icon name="star-outline"></ion-icon>
+            <div role="group" aria-label="Rating for Christine Barkley">
+              <img
+                src="img/star-solid.svg"
+                class="akram ayan"
+                alt="5 stars rating"
+              />
+              <img
+                src="img/star-solid.svg"
+                class="akram ayan"
+                alt="5 stars rating"
+              />
+              <img
+                src="img/star-solid.svg"
+                class="akram ayan"
+                alt="5 stars rating"
+              />
+              <img
+                src="img/star-solid.svg"
+                class="akram ayan"
+                alt="5 stars rating"
+              />
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
           </div>
-        </div>
-        <div class="testimonial-col">
-          <img src="img/user2.jpg" alt="David Byer images" />
+        </article>
+
+        <article class="testimonial-col" aria-labelledby="testimonial-david">
+          <img src="img/user2.jpg" alt="Photo of David Byer, a student" />
           <div>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -184,13 +267,31 @@
               voluptates sed ullam maxime.
             </p>
             <h3>David Byer</h3>
-            <img src="img/star-solid.svg" class="akram ayan" />
-            <img src="img/star-solid.svg" class="akram ayan" />
-            <img src="img/star-solid.svg" class="akram ayan" />
-            <img src="img/star-solid.svg" class="akram ayan" />
-            <ion-icon name="star-half-outline"></ion-icon>
+            <div role="group" aria-label="Rating for David Byer">
+              <img
+                src="img/star-solid.svg"
+                class="akram ayan"
+                alt="5 stars rating"
+              />
+              <img
+                src="img/star-solid.svg"
+                class="akram ayan"
+                alt="5 stars rating"
+              />
+              <img
+                src="img/star-solid.svg"
+                class="akram ayan"
+                alt="5 stars rating"
+              />
+              <img
+                src="img/star-solid.svg"
+                class="akram ayan"
+                alt="5 stars rating"
+              />
+              <ion-icon name="star-half-outline"></ion-icon>
+            </div>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
@@ -199,7 +300,12 @@
         Enroll For Our Various Online Courses <br />
         From Anywhere From The World
       </h1>
-      <a href="" class="hero-btn">CONTACT US</a>
+      <a
+        href=""
+        class="hero-btn"
+        aria-label="Contact us for more information on enrolling in courses"
+        >CONTACT US</a
+      >
     </section>
 
     <footer class="footer">
@@ -210,14 +316,35 @@
         delectus sint accusantium. Sapiente ipsum at sit tenetur iste quasi.
       </p>
       <div class="icons">
-        <ion-icon name="logo-facebook" class="footer-icon"></ion-icon>
-        <ion-icon name="logo-twitter" class="footer-icon"></ion-icon>
-        <ion-icon name="logo-instagram" class="footer-icon"></ion-icon>
-        <ion-icon name="logo-linkedin" class="footer-icon"></ion-icon>
+        <ion-icon
+          name="logo-facebook"
+          class="footer-icon"
+          aria-label="Visit our Facebook page"
+        ></ion-icon>
+        <ion-icon
+          name="logo-twitter"
+          class="footer-icon"
+          aria-label="Visit our Twitter page"
+        ></ion-icon>
+        <ion-icon
+          name="logo-instagram"
+          class="footer-icon"
+          aria-label="Visit our Instagram page"
+        ></ion-icon>
+        <ion-icon
+          name="logo-linkedin"
+          class="footer-icon"
+          aria-label="Visit our LinkedIn page"
+        ></ion-icon>
       </div>
       <p>
         Made with
-        <ion-icon name="heart-outline" class="footer-icon a"></ion-icon> By Ayan
+        <ion-icon
+          name="heart-outline"
+          class="footer-icon a"
+          aria-label="Heart icon"
+        ></ion-icon>
+        By Ayan
       </p>
     </footer>
 

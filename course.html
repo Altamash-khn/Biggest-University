@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <meta
+      name="description"
+      content="Explore the courses we offer at our prestigious university. From intermediate to post-graduation programs, discover your path to success with world-class education."
+    />
+
+    <title>Course</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,7 +32,7 @@
   <body>
     <section class="sub-header">
       <nav>
-        <a href="index.html"><img src="img/logo.png" alt="logo " /></a>
+        <a href="index.html"><img src="img/logo.png" alt="eduford logo " /></a>
         <div class="nav-links" id="navLinks">
           <ion-icon
             class="close-icon"
@@ -87,31 +92,55 @@
       <h1>Our Facilities</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-      <div class="row">
-        <div class="facilities-col">
-          <img src="img/library.png" alt="library" />
+      <div
+        class="row"
+        role="region"
+        aria-label="Facilities offered at our campus"
+      >
+        <article class="facilities-col" aria-labelledby="library-facility">
+          <picture>
+            <source srcset="img/library.webp" type="image/webp" />
+            <img
+              src="img/library.jpg"
+              alt="Interior of a world-class library with rows of bookshelves and reading tables"
+            />
+          </picture>
           <h3>World Class Library</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum
             dolor sit amet consectetur adipisicing.
           </p>
-        </div>
-        <div class="facilities-col">
-          <img src="img/basketball.png" alt="Basketball" />
+        </article>
+
+        <article class="facilities-col" aria-labelledby="playground-facility">
+          <picture>
+            <source srcset="img/basketball.webp" type="image.webp" />
+            <img
+              src="img/basketball.jpg"
+              alt="A women's basketball match in progress on a large outdoor basketball court"
+            />
+          </picture>
           <h3>Largest Play Ground</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum
             dolor sit amet consectetur adipisicing.
           </p>
-        </div>
-        <div class="facilities-col">
-          <img src="img/cafeteria.png" alt="" />
+        </article>
+
+        <article class="facilities-col" aria-labelledby="cafeteria-facility">
+          <picture>
+            <source srcset="img/cafeteria.webp" type="image/webp" />
+            <img
+              src="img/cafeteria.jpg"
+              alt="A modern cafeteria offering a variety of food options in a spacious dining area"
+            />
+          </picture>
           <h3>Tasty And Healthy Food</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum
             dolor sit amet consectetur adipisicing.
           </p>
-        </div>
+        </article>
       </div>
     </section>
 
@@ -123,14 +152,35 @@
         delectus sint accusantium. Sapiente ipsum at sit tenetur iste quasi.
       </p>
       <div class="icons">
-        <ion-icon name="logo-facebook" class="footer-icon"></ion-icon>
-        <ion-icon name="logo-twitter" class="footer-icon"></ion-icon>
-        <ion-icon name="logo-instagram" class="footer-icon"></ion-icon>
-        <ion-icon name="logo-linkedin" class="footer-icon"></ion-icon>
+        <ion-icon
+          name="logo-facebook"
+          class="footer-icon"
+          aria-label="Visit our Facebook page"
+        ></ion-icon>
+        <ion-icon
+          name="logo-twitter"
+          class="footer-icon"
+          aria-label="Visit our Twitter page"
+        ></ion-icon>
+        <ion-icon
+          name="logo-instagram"
+          class="footer-icon"
+          aria-label="Visit our Instagram page"
+        ></ion-icon>
+        <ion-icon
+          name="logo-linkedin"
+          class="footer-icon"
+          aria-label="Visit our LinkedIn page"
+        ></ion-icon>
       </div>
       <p>
         Made with
-        <ion-icon name="heart-outline" class="footer-icon a"></ion-icon> By Ayan
+        <ion-icon
+          name="heart-outline"
+          class="footer-icon a"
+          aria-label="Heart icon"
+        ></ion-icon>
+        By Ayan
       </p>
     </footer>
 

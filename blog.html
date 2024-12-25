@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore our Certificate & Online Programs in various fields including Business Analytics, Data Science, and more. Learn about the benefits and opportunities available through our programs."
+    />
+
     <title>Blog</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,7 +32,7 @@
   <body>
     <section class="sub-header">
       <nav>
-        <a href="index.html"><img src="img/logo.png" alt="logo " /></a>
+        <a href="index.html"><img src="img/logo.png" alt="eduford logo " /></a>
         <div class="nav-links" id="navLinks">
           <ion-icon
             class="close-icon"
@@ -55,7 +60,10 @@
     <section class="blog-content">
       <div class="row">
         <div class="blog-left">
-          <img src="img/certificate.jpg" alt="Certificate" />
+          <picture>
+            <source srcset="img/certificate.webp" type="image/webp" />
+            <img src="img/certificate.jpg" alt="Certificate" />
+          </picture>
           <h2>Our Certificate & Online Programs</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
@@ -162,14 +170,35 @@
         delectus sint accusantium. Sapiente ipsum at sit tenetur iste quasi.
       </p>
       <div class="icons">
-        <ion-icon name="logo-facebook" class="footer-icon"></ion-icon>
-        <ion-icon name="logo-twitter" class="footer-icon"></ion-icon>
-        <ion-icon name="logo-instagram" class="footer-icon"></ion-icon>
-        <ion-icon name="logo-linkedin" class="footer-icon"></ion-icon>
+        <ion-icon
+          name="logo-facebook"
+          class="footer-icon"
+          aria-label="Visit our Facebook page"
+        ></ion-icon>
+        <ion-icon
+          name="logo-twitter"
+          class="footer-icon"
+          aria-label="Visit our Twitter page"
+        ></ion-icon>
+        <ion-icon
+          name="logo-instagram"
+          class="footer-icon"
+          aria-label="Visit our Instagram page"
+        ></ion-icon>
+        <ion-icon
+          name="logo-linkedin"
+          class="footer-icon"
+          aria-label="Visit our LinkedIn page"
+        ></ion-icon>
       </div>
       <p>
         Made with
-        <ion-icon name="heart-outline" class="footer-icon a"></ion-icon> By Ayan
+        <ion-icon
+          name="heart-outline"
+          class="footer-icon a"
+          aria-label="Heart icon"
+        ></ion-icon>
+        By Ayan
       </p>
     </footer>
 
