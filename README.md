@@ -4,7 +4,7 @@ Eduford is a simple, responsive educational website that showcases various pages
 
 ## Preview
 
-You can see the demo <a href="https://biggest-university-altamash.netlify.app/" target="_blank">HERE</a>.
+You can see the demo <a href="https://biggest-university-five.vercel.app/" target="_blank">HERE</a>.
 
 ## Features
 
